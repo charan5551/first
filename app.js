@@ -25,7 +25,7 @@ app.use(bodyParser.json());
 app.use(forceSSL);
 const contact = require('./contact');
 
-app.use('contact', contact);
+app.use('/contact', contact);
 app.use(cors());
 // If an incoming request uses
 // a protocol other than HTTPS,
