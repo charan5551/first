@@ -23,9 +23,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 //routes
 app.use(forceSSL);
-const contact = require('./routes/contact');
+const contact = require('./contact');
 
-app.use('/contact', contact);
+app.use('contact', contact);
 app.use(cors());
 // If an incoming request uses
 // a protocol other than HTTPS,
